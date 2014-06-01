@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QUnit Example</title>
+<link rel="stylesheet" href="style/qunit.css">
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="lib/qunit.js"></script>
+<script src="lib/blanketjs.min.js"></script>
+<script>
+      QUnit.config.reorder = false;
+</script>
+
+<script src="lib/qunit-reporter-junit.js"></script>
+<script src="test/decimal.js" data-cover></script>
+<script src="test/calculadora.js" data-cover></script>
+<script src="test/test_calculadora.js" data-cover></script>
+<br />
+<br />
+  <textarea id="textbox" rows="25" cols="100"></textarea> 
+  <!--<form method="get" action="test_report.xml">-->
+  <button id="create" type="submit">Create file</button> 
+  <a download="test_report.xml" id="downloadlink" style="display: none">Download</a>
+
+</body>
+</html>
+
+
